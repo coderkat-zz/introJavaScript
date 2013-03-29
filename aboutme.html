@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8"/>
+  	<title>About Me</title>
+  	<style>
+  	.listitem {
+  		color: red;
+  	  }
+    </style>
+  </head>
+  <body>
+  	<h1>About Me</h1>
+
+  	<ul>
+  		<li>Name: <span id="name"></span>
+  		<li>Age:  <span id="age"></span>
+  		<li>Hometown: <span id="hometown"></span>
+  	</ul>
+
+<script>
+	document.body.style.fontFamily = "Arial, sans-serif";
+	document.getElementById('name').innerHTML = "Kathryn King";
+	document.getElementById('age').innerHTML = "28";
+	document.getElementById('hometown').innerHTML = "Chicago";
+	var lis = document.getElementsByTagName('li');
+	for (var i = 0; i < lis.length; i++) {
+		lis[i].className = 'listitem';
+	}
+
+	var newImg = document.createElement('img');
+	newImg.src = 'https://sphotos-b.xx.fbcdn.net/hphotos-prn1/71435_671025499238_1265642073_n.jpg';
+	document.body.appendChild(newImg);
+  </script>
+</body>
+</html>
